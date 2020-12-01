@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Advent_of_code
 {
-	public class Day2
+	public class Day1
 	{
 		private int[] input = new[] {
 		1531,
@@ -209,26 +209,20 @@ namespace Advent_of_code
 		1281
 		};
 
-		public Day2()
+		public Challange1()
 		{
 			//Calculate sums
 			for (var x = 0; x < 200; x++)
 			{
 				for (var y = 0; y < 200; y++)
 				{
-					for (var z = 0; z < 200; z++)
+					var answerX = input[x];
+					var answerY = input[y];
+
+					if (answerX + answerY == 2020)
 					{
-						var answerX = input[x];
-						var answerY = input[y];
-						var answerZ = input[z];
-
-						if (answerX + answerY + answerZ == 2020)
-						{
-							Console.WriteLine($"Yay! Found answer is {answerX * answerY * answerZ}");
-						}
+						Console.WriteLine($"Yay! Found answer is {answerX * answerY}");
 					}
-
-					
 				}
 			}
 		}

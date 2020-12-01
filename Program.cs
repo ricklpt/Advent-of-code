@@ -7,8 +7,8 @@ namespace Advent_of_code
 		static void Main(string[] args)
 		{
 			Console.WriteLine("Hello World!");
-			//new Day1();
-			new Day2();
+			//new Challange1();
+			new Challange2();
 		}
 	}
 }
