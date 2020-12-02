@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Advent_of_code
 {
-	public class Day1
+	public class Challange1
 	{
 		private int[] input = new[] {
 		1531,

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Advent_of_code._2015;
+using System;
 
 namespace Advent_of_code
 {
@@ -8,7 +9,7 @@ namespace Advent_of_code
 		{
 			Console.WriteLine("Hello World!");
 			//new Challange1();
-			new Challange2();
+			new _2020.Day1();
 		}
 	}
 }
