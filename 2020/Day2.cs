@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace Advent_of_code._2020
 {
-	public class Day1
+	public class Day2
 	{
 		private string[] input = new string[] {
 			"15-16 m: mhmjmzrmmlmmmmmm",
@@ -1013,7 +1013,7 @@ namespace Advent_of_code._2020
 
 		};
 
-		public Day1()
+		public Day2()
 		{
 			var count = input.Where(Part1).Count();
 			Console.WriteLine(count);
