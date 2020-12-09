@@ -9,7 +9,7 @@ namespace Advent_of_code
 		{
 			Console.WriteLine("Hello World!");
 			//new Challange1();
-			new _2020.Day8();
+			new _2020.Day9();
 			Console.ReadLine();
 		}
 	}
