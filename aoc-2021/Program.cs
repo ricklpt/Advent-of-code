@@ -6,7 +6,6 @@ namespace aoc_2021
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             new Day01().Run();
         }
     }

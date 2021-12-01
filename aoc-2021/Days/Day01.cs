@@ -7,45 +7,56 @@ namespace aoc_2021
         public override string Part1()
         {
             var lines = ReadInput("Day01");
+            var previousLine = 999999;
+            var count = 0;
 
             foreach (var item1 in lines)
             {
                 var int1 = Convert.ToInt32(item1);
-                foreach (var item2 in lines)
+
+                if(previousLine < int1)
                 {
-                    var int2 = Convert.ToInt32(item2);
-                    if (int1 + int2 == 2020)
-                    {
-                        return (int1 * int2).ToString();
-                    }
+                    count++;
                 }
+
+                previousLine = int1;
             }
 
-            return "0";
+            return count.ToString();
         }
 
         public override string Part2()
         {
-            var lines = ReadInput("Day01");
+            var lines = ReadInput("Day01");            
+            var count = 0;
+
+            var intA = 0;
+            var intB = 0;
+            var intC = 0;
+
+            var previousSum = 0;
 
             foreach (var item1 in lines)
             {
                 var int1 = Convert.ToInt32(item1);
-                foreach (var item2 in lines)
-                {
-                    var int2 = Convert.ToInt32(item2);
-                    foreach (var item3 in lines)
-                    {
-                        var int3 = Convert.ToInt32(item3);
-                        if (int1 + int2 + int3 == 2020)
-                        {
-                            return (int1 * int2 * int3).ToString();
-                        }
-                    }
-                }
-            }
 
-            return "0";
+                intA = intB;
+                intB = intC;
+                intC = int1;
+
+                var sum = intA + intB + intC;
+
+                if(previousSum < sum && intA != 0 && intB != 0 && intC != 0)
+                {
+                    count++;
+                }
+
+                previousSum = sum;
+
+            }
+            count--; //account for the first anwswer that is nog right.
+            
+            return count.ToString();
         }
     }
 }
