@@ -8,7 +8,10 @@ namespace aoc_2021
         {
             //new Day01().Run();
             //new Day02().Run();
-            new Day03().Run();
+            //new Day03().Run();
+            //new Day04().Run();
+            //new Day05().Run();
+            new Day06().Run();
         }
     }
 }
