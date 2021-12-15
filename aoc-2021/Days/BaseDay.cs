@@ -21,7 +21,7 @@ namespace aoc_2021
 
         public void Run()
         {
-            Console.WriteLine($"Solution Part 1 = {Part1()}");
+             Console.WriteLine($"Solution Part 1 = {Part1()}");
             Console.WriteLine($"Solution Part 2 = {Part2()}");
         }
 
