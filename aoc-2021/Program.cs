@@ -16,7 +16,7 @@ namespace aoc_2021
             //new Day08().Run();
             //new Day09().Run();
             //new Day10().Run();
-            new Day15().Run();
+            new Day16().Run();
         }
     }
 }
